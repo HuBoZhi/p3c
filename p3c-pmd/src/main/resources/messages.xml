@@ -579,4 +579,10 @@
             使用lombok.SneakyThrows时必须显示声明抛出的异常类型。
         ]]>
     </entry>
+
+    <entry key="java.extend.MethodParamsNumRule.rule.msg">
+        <![CDATA[
+            方法的参数不要超过5个，如果确实需要5个以上的参数，请创建参数对象。
+        ]]>
+    </entry>
 </properties>

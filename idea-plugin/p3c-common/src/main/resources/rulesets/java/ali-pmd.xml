@@ -24,4 +24,5 @@
         <exclude name="NeedBraceRule"/>
     </rule>
     <rule ref="rulesets/java/xenoamess-additional.xml"/>
+    <rule ref="rulesets/java/ali-extend.xml"/>
 </ruleset>

@@ -584,4 +584,10 @@ Positive example:
             must clarify the exception types when using lombok.SneakyThrows .
         ]]>
     </entry>
+
+    <entry key="java.extend.MethodParamsNumRule.rule.msg">
+        <![CDATA[
+            The parameters of the method should not exceed 5. If you really need more than 5 parameters, please create a parameter object.
+        ]]>
+    </entry>
 </properties>
