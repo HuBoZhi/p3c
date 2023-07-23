@@ -585,4 +585,10 @@
             方法的参数不要超过5个，如果确实需要5个以上的参数，请创建参数对象。
         ]]>
     </entry>
+
+    <entry key="java.extend.StringSleuthRule.rule.msg">
+        <![CDATA[
+            不允许出现 fiberhome 关键词，如果必须体现公司信息，推荐使用fh。
+        ]]>
+    </entry>
 </properties>

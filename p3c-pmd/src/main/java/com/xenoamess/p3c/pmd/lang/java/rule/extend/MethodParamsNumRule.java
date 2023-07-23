@@ -8,17 +8,17 @@ import net.sourceforge.pmd.lang.java.ast.ASTFormalParameters;
  * @date 2023/7/20 12:45
  **/
 public class MethodParamsNumRule extends AbstractAliRule {
- 
+
     private static final int PARAMSNUM = 5;
- 
+
     @Override
     public Object visit(ASTFormalParameters node, Object data) {
-        if (node.jjtGetNumChildren()>PARAMSNUM) {
-            addViolationWithMessage(data,node,"java.extend.MethodParamsNumRule.rule.msg");
-        };
+        if (node.getNumChildren() > PARAMSNUM) {
+            addViolationWithMessage(data, node, "java.extend.MethodParamsNumRule.rule.msg");
+        }
         return super.visit(node, data);
     }
- 
+
 }
  
  

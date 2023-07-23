@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
     <description>ExtendJavaExceptions</description>
 
-    <!-- 方法的参数 -->
+    <!-- 方法的参数不能多余5个 -->
     <rule name="MethodParamsNumRule"
           language="java"
           message="java.extend.MethodParamsNumRule.rule.msg"
@@ -17,6 +17,22 @@
          public void fn(int a, int b, int c,int d, int f, int g) {
              dosomething();
          }
+        }
+  ]]>
+        </example>
+    </rule>
+
+    <rule name="StringSleuthRule"
+          language="java"
+          message="java.extend.MethodParamsNumRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.StringSleuthRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class Example {
+            public void test() {
+                // ...
+            }
         }
   ]]>
         </example>

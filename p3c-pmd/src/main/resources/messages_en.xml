@@ -590,4 +590,10 @@ Positive example:
             The parameters of the method should not exceed 5. If you really need more than 5 parameters, please create a parameter object.
         ]]>
     </entry>
+
+    <entry key="java.extend.StringSleuthRule.rule.msg">
+        <![CDATA[
+            The fiberhome keyword is not allowed in the code. If company information must be reflected, fh is recommended.
+        ]]>
+    </entry>
 </properties>
