@@ -94,3 +94,6 @@ out
 
 #versions-maven-plugin
 *.versionsBackup
+
+# npm
+*/node_modules/**
