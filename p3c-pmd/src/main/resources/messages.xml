@@ -591,4 +591,10 @@
             不允许出现 fiberhome 关键词，如果必须体现公司信息，推荐使用fh。
         ]]>
     </entry>
+
+    <entry key="java.extend.CheckChineseNameRule.rule.msg">
+        <![CDATA[
+            不允许使用中文命名。
+        ]]>
+    </entry>
 </properties>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+    <code-fragment id="constants-err"><![CDATA[
+    public class FiberHome哈哈 {
+         private static String 王刚 = "123";
+         public void 小红() {
+            int 小明 = 1;
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description>不允许使用中文命名。</description>
+        <expected-problems>4</expected-problems>
+        <expected-linenumbers>1,2,3,4</expected-linenumbers>
+        <code-ref id="constants-err"/>
+    </test-code>
+
+</test-data>

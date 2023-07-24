@@ -37,4 +37,21 @@
   ]]>
         </example>
     </rule>
+
+    <rule name="CheckChineseNameRule"
+          language="java"
+          message="java.extend.CheckChineseNameRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.CheckChineseNameRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class Example {
+            public void test() {
+                // ...
+            }
+        }
+  ]]>
+        </example>
+    </rule>
+
 </ruleset>

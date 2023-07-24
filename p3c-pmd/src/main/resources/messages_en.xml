@@ -596,4 +596,10 @@ Positive example:
             The fiberhome keyword is not allowed in the code. If company information must be reflected, fh is recommended.
         ]]>
     </entry>
+
+    <entry key="java.extend.CheckChineseNameRule.rule.msg">
+        <![CDATA[
+            Chinese names are not allowed.
+        ]]>
+    </entry>
 </properties>
