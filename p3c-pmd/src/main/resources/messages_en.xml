@@ -602,4 +602,12 @@ Positive example:
             Chinese names are not allowed.
         ]]>
     </entry>
+
+    <entry key="java.extend.PojoNameUpperCaseCheckRule.rule.msg">
+        <![CDATA[
+            class name [ %s ] suffix [ %s ] capitalization required。
+        ]]>
+    </entry>
+
+
 </properties>

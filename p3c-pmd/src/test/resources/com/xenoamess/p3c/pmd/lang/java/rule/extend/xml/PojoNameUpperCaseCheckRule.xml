@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+
+    <code-fragment id="constants-err-1"><![CDATA[
+    public class ExampleDo {
+         public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-1"/>
+    </test-code>
+
+    <code-fragment id="constants-err-2"><![CDATA[
+    public class ExampleDTo {
+         public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-3"/>
+    </test-code>
+
+    <code-fragment id="constants-err-3"><![CDATA[
+    public class ExampleBo {
+        public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-3"/>
+    </test-code>
+
+    <code-fragment id="constants-err-4"><![CDATA[
+    public class ExamplePo {
+        public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-4"/>
+    </test-code>
+
+    <code-fragment id="constants-err-5"><![CDATA[
+    public class ExampleVo {
+        public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-5"/>
+    </test-code>
+
+    <code-fragment id="constants-err-6"><![CDATA[
+    public class ExampleAo {
+        public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-6"/>
+    </test-code>
+
+    <code-fragment id="constants-err-7"><![CDATA[
+    public class Exampleuid {
+        public void fn(int f) {
+            // ...
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description></description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <code-ref id="constants-err-7"/>
+    </test-code>
+
+</test-data>

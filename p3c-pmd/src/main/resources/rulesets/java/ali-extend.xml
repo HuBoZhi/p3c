@@ -54,4 +54,20 @@
         </example>
     </rule>
 
+    <rule name="PojoNameUpperCaseCheckRule"
+          language="java"
+          message="java.extend.CheckChineseNameRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.PojoNameUpperCaseCheckRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class ExampleDO {
+            public void test() {
+                // ...
+            }
+        }
+  ]]>
+        </example>
+    </rule>
+
 </ruleset>

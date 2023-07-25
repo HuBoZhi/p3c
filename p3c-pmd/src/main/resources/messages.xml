@@ -597,4 +597,12 @@
             不允许使用中文命名。
         ]]>
     </entry>
+
+    <entry key="java.extend.PojoNameUpperCaseCheckRule.rule.msg">
+        <![CDATA[
+            类名 [ %s ] 结尾的 [ %s ] 需要大写。
+        ]]>
+    </entry>
+
+
 </properties>
