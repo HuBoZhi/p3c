@@ -47,7 +47,7 @@ public class PojoNameUpperCaseCheckRule extends AbstractAliRule {
         if (simpleNameLowerCase.endsWith(lowerCheck) && !simpleName.endsWith(upperCheck)) {
             int length = lowerCheck.length();
             int simpleNameLength = simpleName.length();
-            String suffix = simpleName.substring(simpleNameLength - length - 1, simpleNameLength - 1);
+            String suffix = simpleName.substring(simpleNameLength - length, simpleNameLength);
             addViolationWithMessage(data, node,
                     I18nResources.getMessage("java.extend.PojoNameUpperCaseCheckRule.rule.msg",
                             simpleName, suffix));
