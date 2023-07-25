@@ -70,4 +70,20 @@
         </example>
     </rule>
 
+    <rule name="CheckArrayDeclarationRule"
+          language="java"
+          message="java.extend.CheckArrayDeclarationRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.CheckArrayDeclarationRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class ExampleDO {
+            public void test() {
+                  int num[] = new int[5];
+            }
+        }
+  ]]>
+        </example>
+    </rule>
+
 </ruleset>

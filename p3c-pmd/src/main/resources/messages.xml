@@ -582,27 +582,32 @@
 
     <entry key="java.extend.MethodParamsNumRule.rule.msg">
         <![CDATA[
-            方法的参数不要超过5个，如果确实需要5个以上的参数，请创建参数对象。
+            【推荐】方法的参数不要超过5个，如果确实需要5个以上的参数，请创建参数对象。
         ]]>
     </entry>
 
     <entry key="java.extend.StringSleuthRule.rule.msg">
         <![CDATA[
-            不允许出现 fiberhome 关键词，如果必须体现公司信息，推荐使用fh。
+            【强制】不允许出现 fiberhome 关键词，如果必须体现公司信息，推荐使用fh。
         ]]>
     </entry>
 
     <entry key="java.extend.CheckChineseNameRule.rule.msg">
         <![CDATA[
-            不允许使用中文命名。
+            【强制】不允许使用中文命名。
         ]]>
     </entry>
 
     <entry key="java.extend.PojoNameUpperCaseCheckRule.rule.msg">
         <![CDATA[
-            类名 [ %s ] 结尾的 [ %s ] 需要大写。
+            【强制】类名 [ %s ] 结尾的 [ %s ] 需要大写。
         ]]>
     </entry>
 
+    <entry key="java.extend.CheckArrayDeclarationRule.rule.msg">
+        <![CDATA[
+            【强制】类型与中括号紧挨相连来表示数组。
+        ]]>
+    </entry>
 
 </properties>

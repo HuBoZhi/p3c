@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+    <code-fragment id="constants-err"><![CDATA[
+    public class Example {
+         private String n[] = new String[2];
+         private static String nums[] = new String[1];
+         public void test() {
+            int nu[] = new int[3];
+            int[] nnn = new int[6];
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description>类型与中括号紧挨相连来表示数组</description>
+        <expected-problems>3</expected-problems>
+        <expected-linenumbers>2,3,5</expected-linenumbers>
+        <code-ref id="constants-err"/>
+    </test-code>
+
+</test-data>

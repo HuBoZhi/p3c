@@ -609,5 +609,11 @@ Positive example:
         ]]>
     </entry>
 
+    <entry key="java.extend.CheckArrayDeclarationRule.rule.msg">
+        <![CDATA[
+            [Mandatory] The type is closely connected with square brackets to represent an array.
+        ]]>
+    </entry>
+
 
 </properties>
