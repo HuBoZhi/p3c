@@ -615,5 +615,10 @@ Positive example:
         ]]>
     </entry>
 
+    <entry key="java.extend.CheckBooleanPrefixRule.rule.msg">
+        <![CDATA[
+            [Mandatory] Boolean variables [ %s ] in the POJO class should not be prefixed with is, otherwise some frame parsing will cause serialization errors.
+        ]]>
+    </entry>
 
 </properties>

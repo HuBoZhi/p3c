@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+    <code-fragment id="constants-err"><![CDATA[
+    public class ExampleDO {
+         private Boolean isDelete;
+         private Boolean staticType;
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description>【强制】POJO类中布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。</description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>2</expected-linenumbers>
+        <code-ref id="constants-err"/>
+    </test-code>
+
+</test-data>

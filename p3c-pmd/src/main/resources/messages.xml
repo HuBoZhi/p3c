@@ -610,4 +610,9 @@
         ]]>
     </entry>
 
+    <entry key="java.extend.CheckBooleanPrefixRule.rule.msg">
+        <![CDATA[
+            【强制】POJO类中布尔类型的变量[ %s ]，都不要加 is 前缀，否则部分框架解析会引起序列化错误。
+        ]]>
+    </entry>
 </properties>

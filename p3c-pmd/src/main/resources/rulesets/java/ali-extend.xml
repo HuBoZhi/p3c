@@ -86,4 +86,20 @@
         </example>
     </rule>
 
+    <rule name="CheckBooleanPrefixRule"
+          language="java"
+          message="java.extend.CheckBooleanPrefixRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.CheckBooleanPrefixRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class ExampleDO {
+            private Boolean delete;
+            
+        }
+  ]]>
+        </example>
+    </rule>
+
+
 </ruleset>
