@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+    <code-fragment id="constants-err"><![CDATA[
+    public class Example {
+         private Long a = 1l;
+         public void hello() {
+            long b = 2l;
+         }
+    }
+    ]]>
+    </code-fragment>
+
+    <test-code>
+        <description>在 long 或者 Long 赋值时，数值后使用大写的 L,不能是小写的 l,小写容易跟数字 1 混淆，造成误解;</description>
+        <expected-problems>2</expected-problems>
+        <expected-linenumbers>2,4</expected-linenumbers>
+        <code-ref id="constants-err"/>
+    </test-code>
+
+</test-data>

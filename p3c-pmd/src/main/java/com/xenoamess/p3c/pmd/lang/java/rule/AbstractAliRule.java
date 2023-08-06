@@ -75,11 +75,7 @@ public abstract class AbstractAliRule extends AbstractJavaRule {
         if (ViolationUtils.shouldIgnoreViolation(this.getClass(), node)) {
             return;
         }
-        super.addViolationWithMessage(
-                data,
-                node,
-                I18nResources.getMessageWithExceptionHandled(message)
-        );
+        asCtx(data).addViolationWithMessage(node, I18nResources.getMessageWithExceptionHandled(message));
     }
 
     @Override
@@ -87,11 +83,7 @@ public abstract class AbstractAliRule extends AbstractJavaRule {
         if (ViolationUtils.shouldIgnoreViolation(this.getClass(), node)) {
             return;
         }
-        super.addViolationWithMessage(
-                data,
-                node,
-                String.format(I18nResources.getMessageWithExceptionHandled(message), args)
-        );
+        asCtx(data).addViolationWithMessage(node, String.format(I18nResources.getMessageWithExceptionHandled(message), args));
     }
 
     private void resolveType(ASTCompilationUnit node, Object data) {

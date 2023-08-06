@@ -615,4 +615,10 @@
             【强制】POJO类中布尔类型的变量[ %s ]，都不要加 is 前缀，否则部分框架解析会引起序列化错误。
         ]]>
     </entry>
+
+    <entry key="java.extend.CheckLongLiteralSuffixRule.rule.msg">
+        <![CDATA[
+            【强制】字段 [ %s ]的值[ %s ] 在 long 或者 Long 赋值时，数值后使用大写的 L,不能是小写的 l,小写容易跟数字 1 混淆，造成误解;
+        ]]>
+    </entry>
 </properties>

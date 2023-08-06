@@ -101,5 +101,19 @@
         </example>
     </rule>
 
+    <rule name="CheckLongLiteralSuffixRule"
+          language="java"
+          message="java.extend.CheckLongLiteralSuffixRule.rule.msg"
+          class="com.xenoamess.p3c.pmd.lang.java.rule.extend.CheckLongLiteralSuffixRule">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+        public class ExampleDO {
+            private Long tt = 123L;
+
+        }
+  ]]>
+        </example>
+    </rule>
 
 </ruleset>
